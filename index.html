@@ -652,11 +652,17 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       additional.textContent = "No additional resources available.";
     }
+    const webinarLink = document.createElement("div");
+    webinarLink.className = "small";
+    webinarLink.style.marginTop = "10px";
+    webinarLink.style.fontWeight = "600";
+    webinarLink.innerHTML = `Join this free webinar by Re-entry Experts! <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8171DnmGMpeuwzl6PZD8voXI-qnPITLWdw7Yt4PF4cW5ePA/viewform" target="_blank" rel="noopener">"All the Pieces of Me" Webinar Sign Up</a>`;
     wrap.appendChild(t);
     wrap.appendChild(p);
     wrap.appendChild(linksHeader);
     wrap.appendChild(links);
     wrap.appendChild(additional);
+    wrap.appendChild(webinarLink);
     return wrap;
   }
 
